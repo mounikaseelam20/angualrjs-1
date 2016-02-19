@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="sample2App">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div ng-controller="MainController">
+        <div class="container col-xs-12" style="background-color:skyblue">
+            <div class="col-xs-12 col-md-2 ">
+                <h3>mounika</h3></div>
+            <div class="col-md-3 text-right" style="padding-top:20px">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                <input type="search">
+            </div>
+            <div class=" col-xs-5 text-right" style="padding-top:30px">
+                <b>personal</b>
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                
+            </div>
+
+        </div>
+        <div id="wrapper" class="col-xs-12">
+            <div class="col-sm-2 col-xs-12" id="sidebar-wrapper" ng-show="animate" ng-class="animate-show animate-hide">
+                <div >
+                    <ul class="nav nav-tabs tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Tab-1</a></li>
+                        <li class=""><a href="#tab2" data-toggle="tab">Tab-2</a></li>
+                    </ul>
+                    <!-- ************************* TAB-1 DETAILS **************************** -->
+                    <div class="col-xs-12 tab-pane tab-content fade active in" id="tab1">
+                        <div class="panel panel-success">
+                            <div class="panel-body">
+                                <div class="col-xs-12 col-sm-2 "><img></div>
+                                <div class="col-xs-12 col-sm-10 panelcontent">
+                                    <p>Welcome to the AngularJS API docs page</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-body">
+                                <div class="col-xs-12 col-sm-2"><img></div>
+                                <div class="col-xs-12 col-sm-10 panelcontent">
+                                    <p>$routeProvider is used to register routes for the application</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-body">
+                                <div class="col-xs-12 col-sm-2"><img></div>
+                                <div class="col-xs-12 col-sm-10 panelcontent">
+                                    <p>$routeParams is used to access the querystring values present in the URL.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-body">
+                                <div class="col-xs-12 col-sm-2"><img></div>
+                                <div class="col-xs-12 col-sm-10 panelcontent">
+                                    <p>$routeParams is used to access the querystring values present in the URL.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ************************ TAB-2 DETAILS ******************* -->
+                    <div class="tab-pane fade" id="tab2"></div>
+                </div>
+            </div>
+            
+            <div class="col-xs-10" id="page-content-wrapper" ng-class="autoScroll ? 'icon-autoscroll' : 'icon-autoscroll-disabled'">
+                <div class=" slide-bar">
+                <a href="#menu-toggle" id="menu-toggle" ng-click="play()"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                <div class="header col-xs-12">
+                    <div class="navbar " role="navigation">
+                        <div>
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                                    <span class="icon-bar"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="js-navbar-collapse" role="navigation">
+                                <div class="navbar mainheader">
+                                    <ul class="nav navbar-nav">
+                                        <li class=""><a href="#/home" data-toggle="tab">Home</a></li>
+                                        <li class=""><a href="#/about">About</a></li>
+                                        <li class=""><a ng-href="#/">Contact</a></li>
+                                        <li class=""><a ng-href="#/">My Requests</a></li>
+                                        <li class=""><a ng-href="#/">My To Do</a></li>
+                                        <li class=""><a ng-href="#/">My Life Events</a></li>
+                                        <li class=""><a ng-href="#/">My Rewards</a></li>
+                                        <li class=""><a ng-href="#/">Nominations</a></li>
+                                        <li class=""><a ng-href="#/">My Profile<span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 replace">
+                    <div ng-view=""></div>
+                </div>
+                <div class="footer col-xs-12">
+                    <div>
+                        <p class="col-xs-2"><span class="glyphicon glyphicon-subtitles"></span> chat</p>
+                        <p class="col-xs-2"><span class="glyphicon glyphicon-question-sign"></span>Ask a question</p>
+                        <p class="col-xs-2"><span class="glyphicon glyphicon-refresh"></span>Request call back</p>
+                        <p class="col-xs-2"><span class="glyphicon glyphicon-earphone"></span> 1234567890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <!-- endbuild -->
+</body>
+
+</html>

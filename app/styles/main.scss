@@ -1,0 +1,87 @@
+    $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+    // bower:scss
+    @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+    // endbower
+    .mainheader {
+        background-color: #286090;
+    }
+    
+    a {
+        color: #fcf8e3;
+    }
+    
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+        text-decoration: none;
+        background-color: #286090;
+        border: none;
+        border-bottom: 2px solid yellow;
+        color: yellow;
+    }
+    
+    .navbar-header .navbar-toggle {
+        /* border-color: #F20202; */
+        background-color: rgb(40, 96, 144);
+    }
+    
+    .first .panel {
+        height: 200px;
+        overflow-y: scroll;
+        img {
+            height: 150px;
+        }
+    }
+    
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus,
+    .nav-tabs>li.active>a:hover {
+        color: #555;
+        cursor: pointer;
+        border-color: transparent;
+        border-bottom: 3px solid blue;
+        background-color: transparent;
+    }
+    
+    .footer {
+        color: white;
+        background-color: #286090;
+        bottom: 0;
+        position: fixed;
+        padding-top: 10px;
+    }
+    
+    .first .panel-heading {
+        color: #fcf8e3;
+        background-color: rgba(245, 21, 21, 0.53);
+    }
+    
+    input[type=search] {
+        border: none;
+        background: none;
+    }
+    
+    .slide-bar {
+        padding: 7px;
+        height: 100%;
+        width: -0.666667%;
+        
+        #menu-toggle {
+            color: red;
+        }
+    }
+    
+    #sidebar-wrapper {
+         background-color: #ccc;
+         overflow-y: scroll;
+        .panel:first-child {
+            margin-top: 10px;
+           
+        }
+    }
+    
+  .icon-autoscroll{
+  width:80%;
+  }  
+.icon-autoscroll-disabled{
+    width:100%; 
+}
